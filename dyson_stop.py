@@ -12,7 +12,7 @@ logged = dyson_account.login()
 if logged:
     print("login successfully");
     devices = dyson_account.devices()
-    connected = devices[0].auto_connect()
+    connected = devices[0].connect("192.168.1.101")
 
     if connected:
         print("connect successfully")
